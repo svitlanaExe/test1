@@ -1,0 +1,5 @@
+console.debug('message1')
+console.info('message2')
+console.log('message3')
+console.warn('message4')
+console.error('message5')
