@@ -16,5 +16,3 @@ function sortOdd(arr) {
         (arr%2) ? oddNum.shift() : arr);
 
 }
-
-sorted;
