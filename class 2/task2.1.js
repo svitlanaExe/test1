@@ -4,16 +4,13 @@ function factorial(n) {
 
 function memoize(fn) {
     let cash = [];
-    return(a) => {
-        if(a in cash) {
+    return (a) => {
+        if (cash[a]) {
             console.log('Fetching from cache without calculation, yeah!');
             return cash[a];
-        }
-        else {
+        } else {
             console.log('Calculating result, wait a sec!');
-            let b = factorial(a);
-            cash[a] = b;
-            return b;
+            return cash[a] = fn(a);
         }
     };
 }
